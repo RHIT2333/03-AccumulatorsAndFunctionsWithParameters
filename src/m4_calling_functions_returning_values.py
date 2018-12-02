@@ -35,7 +35,7 @@ def main():
     # m4t_tester.main()
 
 
-def run_test_sum_of_digits():
+def run_test_sum_of_digits():#
     """ Tests the  sum_of_digits   function. """
     # -------------------------------------------------------------------------
     # DONE: 2. Implement this TEST function, as follows:
