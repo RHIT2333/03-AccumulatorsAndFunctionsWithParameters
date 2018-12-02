@@ -16,6 +16,7 @@ def main():
     # Test your functions by putting calls to them here:
     two_circles()
     circle_and_rectangle()
+    lines()
 
 def two_circles():
     """
@@ -122,8 +123,16 @@ def lines():
 
     -- Waits for the user to press the mouse, then closes the window.
     """
-    # TODO: 4. Implement and test this function.
-
+    # DONE: 4. Implement and test this function.
+    window = rg.RoseWindow(400, 400)
+    line1 = rg.Line(rg.Point(100, 100), rg.Point(100, 200))
+    line1.thickness = 5
+    line2 = rg.Line(rg.Point(150, 250), rg.Point(350, 250))
+    line1.attach_to(window)
+    line2.attach_to(window)
+    print('point (100, 150)', '100', '150')
+    window.render()
+    window.continue_on_mouse_click()
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
